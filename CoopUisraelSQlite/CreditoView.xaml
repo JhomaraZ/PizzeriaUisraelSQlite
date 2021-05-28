@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CoopUisraelSQlite.PedidoView">
+    <ContentPage.Content>
+         <ScrollView>
+            <StackLayout Padding="20" Spacing="30">
+                <Label Text="Nombres: "/>
+                <Entry Placeholder="Introduce tus nombres y apellidos" x:Name="txtNombres"/>
+                <Label Text="Pedido: "/>
+                <Entry Placeholder="Detalla tu pedido" x:Name="txtApellidos"/>
+                <Label Text="Direccion: "/>
+                <Entry Placeholder="Direccion" x:Name="txtDireccion"/>
+                <Label Text="Costo total del pedido: "/>
+                <Entry Placeholder="Costo total" Keyboard="Numeric" x:Name="txtMonto"/>
+                <Label Text="Meses Plazo: "/>
+                <Entry Placeholder="Cuotas" Keyboard="Numeric" x:Name="txtPlazo"/>
+                <Button x:Name="btn_CrearPedido" Text="Gerenar pedido" Clicked="btn_CrearPedido_Clicked" BackgroundColor="Azure">
+                </Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

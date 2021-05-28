@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CoopUisraelSQlite.Simular">
+    <ContentPage.Content>
+          <ScrollView>
+            <StackLayout Padding="20" Spacing="30">
+              
+                <Label Text="Valor total del pedido: "/>
+                <Entry Placeholder="Total" Keyboard="Numeric" x:Name="txtMonto"/>
+
+                <Label Text="Meses Plazo: "/>
+                <Entry Placeholder="Hasta 6 meses plazo" Keyboard="Numeric" x:Name="txtPlazo"/>
+
+                <Label Text="Pago Total: "/>
+                <Label x:Name="lbpagoTotal" Text=""/>
+                <Label Text="Cuota mensual: "/>
+                <Label x:Name="lbpagoMensual" Text=""/>
+                <Button x:Name="btn_SimularPedido" Text="Calcular simulaciòn" Clicked="btn_SimularPedido_Clicked" BackgroundColor="Azure">
+                </Button>
+
+            </StackLayout>
+               </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

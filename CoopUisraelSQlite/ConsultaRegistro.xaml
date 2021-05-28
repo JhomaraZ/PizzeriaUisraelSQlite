@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoopUisraelSQlite.ConsultaRegistro">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Label x:Name="lbUsuario"
+               FontSize="Medium"
+               VerticalOptions="End"
+               HorizontalOptions="End" />
+            <Image Source="https://i.ytimg.com/vi/6TkOpc-Fu9E/maxresdefault.jpg"></Image>
+            <Label Text=" "/>
+            <Label Text="***DETALLE DE PEDIDOS***"/>
+            <ListView x:Name="ListaUsuarios" ItemSelected="OnSelection">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding FullName}" Detail="{Binding Monto}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btn_InforPedido" Text="Menu de opciones" Clicked="btn_InformacionPedido_Clicked" BackgroundColor="YellowGreen"/>
+            <Button x:Name="btn_CrearPedido" Text="Nuevo Pedido" Clicked="btn_CrearPedido_Clicked" BackgroundColor="Gold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
